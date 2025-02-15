@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     });
             });
     });
-});
 
 function findMostRecentBook(books) {
     // 🪲 Bug: Logic error
@@ -44,6 +43,7 @@ function findIntersection(setA, setB) {
 }
 
 async function navigateLabyrinth(directions) {
+    
     for (let direction of directions) {
         // 🪲 Bug: No delay
         await new Promise(resolve => setTimeout(resolve, 1000));
